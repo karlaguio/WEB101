@@ -15,33 +15,34 @@
         -->
         <title>LatinaSTEMpact</title>
         <link rel="icon" href="./img/icon.png"/>
-
-        <style>
-        body {
-            background-color: rgb(232, 232, 232);
-        }
-        h1 {
-            color:rgb(8, 52, 147);
-            text-align: center;
-        }
-        button {
-            color: white;
-        }
-        .b1 {
-            background-color: #3c2375;
-        }
-        .b2 {
-            background-color: #243f67;
-        }
-        #para2 {
-            font-style: italic;
-        }
-        </style>
+        <link rel="stylesheet" href="styles.css">
     </head>
     
     <body>
     
-        <!-- navbar [PLACEHOLDER] [ADDED IN UNIT 4] -->
+        <!-- navbar
+
+        Purpose:
+        - Navigation bar that allows users to jump to different sections of the webpage
+        - Also holds buttons for user settings (dark mode, reduce motion)
+
+        When To Modify:
+        - [x] Project 4 (REQUIRED FEATURE)
+        - [X] Project 5 (REQUIRED FEATURE) 
+        - [ ] Project 8 (STRETCH FEATURE) 
+        - [ ] Any time between / after
+        FIX THIS
+        -->
+        <div class="navbar">
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#schd">Schedule</a></li>
+            <li><a href="#linkss">Links</a></li>
+            <li><a href="#videoo">Video</a></li>
+            <button id="theme-button"> Toggle Dark Mode </button>
+            </ul>
+        </div>
 
         <!-- headings
 
@@ -51,18 +52,26 @@
 
         When To Modify:
         - [x] Project 2 (REQUIRED FEATURE) 
-        - [ ] Project 3 (REQUIRED FEATURE) 
-        - [ ] Project 4 (REQUIRED FEATURE) 
+        - [X] Project 3 (REQUIRED FEATURE) 
+        - [X] Project 4 (REQUIRED FEATURE) 
         - [ ] Any time after
         -->
-        <img id="header-img" src="./img/logo500.png"/>
-        <h1>¡LatinaSTEMpact! — Celebrating Bold Minds Changing the World</h1>
-        <h3>Where culture meets code, and Latina voices lead the future of science and innovation.</h3>
-        <button type="button" class="b1">Register Now</button>
-        <button type="button" class="b2">Become a Mentor</button>
+        <!-- Header -->
+        <div class="header-container">
+            <div class="header-item"> <img id="header-img" src="./img/icon2.png" alt="logo of the event showing a woman with STEM objects around">
+            </div>
 
+            <div class="header-item"> <h1 class="header-main-title">¡LatinaSTEMpact! — Celebrating Bold Minds Changing the World</h1>
+                <h3>Where culture meets code, and Latina voices lead the future of science and innovation.</h3>
+            </div>
+
+            <div class="header-item"> 
+                <button class="header-button b1">Register Now</button>
+                <button class="header-button b2">Become a Mentor</button>
+            </div>
+        </div>
         
-        <!-- about
+         <!-- about
 
         Purpose:
         - Section for general info about the event
@@ -74,30 +83,21 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h2>About the Event</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/1fMeCEPjt3w?si=8doUaoLF8xizOtFs&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+        <h2 id=about>About the Event</h2>
         <p>
-            LatinaSTEMpact is a one-day celebration dedicated to 
-            uplifting and recognizing Latina women in science, 
-            technology, engineering, and mathematics. This event 
-            brings together students, professionals, educators, 
-            and allies to share stories, showcase research, and 
-            build lasting mentorship networks. Born out of the 
-            need for greater representation and visibility in 
-            STEM fields, LatinaSTEMpact creates a vibrant space 
-            where culture and innovation thrive side by side. 
+            LatinaSTEMpact is a one-day celebration dedicated to  uplifting and recognizing Latina women in science, technology, engineering, and mathematics. This event brings together students, professionals, educators, and allies to share stories, showcase research, and build lasting mentorship networks. Born out of the need for greater representation and visibility in STEM fields, LatinaSTEMpact creates a vibrant space where culture and innovation thrive side by side. 
         </p>
-        <p id="para2"> If you're a high school student curious about 
-            coding or a seasoned researcher looking to give back, 
-            this event is for you.
+        <p id="para2"> If you're a high school student curious about coding or a seasoned researcher looking to give back, this event is for you.
         </p>
 
         <h3>What to Expect</h3>
-        <h4>Tag Line</h4>
+        <h4>Igniting Futures, Empowering Voices</h4>
         <ul>
-            <li> <b>Bullet 1:</b> <i>Description</i></li>
-            <li> <b>Bullet 2:</b> <i>Description</i></li>
-            <li> <b>Bullet 3:</b> <i>Description</i></li>
+            <li> <b>Inspirational Keynotes:</b> <i>Hear from pioneering Latina leaders who are breaking barriers and shaping the future of STEM.</i></li>
+            <li> <b>Interactive Workshops:</b> <i>Dive into hands-on sessions covering coding, AI, data science, and more, tailored for all skill levels.</i></li>
+            <li> <b>Networking & Mentorship:</b> <i>Connect with fellow students, seasoned professionals, and potential mentors to build lasting relationships.</i></li>
+            <li> <b>Career Pathways Panel:</b> <i>Gain insights into diverse career opportunities in STEM and learn how to navigate your professional journey.</i></li>
+            <li> <b>Community Building:</b> <i>Join a supportive network dedicated to celebrating culture, fostering innovation, and championing Latina excellence in STEM.</i></li>
         </ul>
 
         <!-- schedule
@@ -111,28 +111,81 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h2>Event Schedule</h2>
-
-        <img alt="A drawing of four latina women speaking to each other while eating lunch" src="./img/act2.png" style="width: 400px; height: auto;" />
-        <h3>Lunch and Networking Hour</h3>
-        <p>Enjoy a delicious lunch while networking with attendees, speakers, and professionals. This informal hour offers a chance to make meaningful connections with future mentors, collaborators, or friends.</p>
+        <h2 id="schd">Event Schedule</h2>
+        <div class="sched">
+            <div>
+            <img alt="A drawing of four latina women speaking to each other while eating lunch" src="./img/act2.png" style="width: 400px; height: auto;" />
+            <h3>Lunch and Networking Hour</h3>
+            <p>Enjoy a delicious lunch while networking with attendees, speakers, and professionals. This informal hour offers a chance to make meaningful connections with future mentors, collaborators, or friends.</p>
+            </div>
             
-        <img alt="A woman working on her laptop" src="./img/act1.png" style="width: 300px; height: auto;"/>
-        <h3>Workshops (Choose one)</h3>
-        <p>
-            <ul>
-                <li>Intro to Coding (Beginners): Learn Python basics through a fun hands-on mini project, perfect for beginners. </li>
-                <li>Science Communication: Practice simplifying complex topics and presenting your work to a broader audience. </li>
-                <li>Career Pathways in STEM: Explore real-world roles and how to navigate education, internships, and industry as a Latina in STEM.</li>
-            </ul>
-        </p>
+            <div>
+            <img alt="A woman working on her laptop" src="./img/act1.png" style="width: 300px; height: auto;"/>
+            <h3>Workshops (Choose one)</h3>
+            <p>
+                <ul>
+                    <li>Intro to Coding (Beginners): Learn Python basics through a fun hands-on mini project, perfect for beginners. </li>
+                    <li>Science Communication: Practice simplifying complex topics and presenting your work to a broader audience. </li>
+                    <li>Career Pathways in STEM: Explore real-world roles and how to navigate education, internships, and industry as a Latina in STEM.</li>
+                </ul>
+            </p>
+            </div>
         
-        <img alt="Random Image of a woman" src="./img/act11.png" style="width: 300px; height: auto;"/>
-        <h3>Event Activity 3</h3>
-        <p>Description of event activity.</p>
+            <div>
+            <img alt="Random Image of a woman" src="./img/act11.png" style="width: 300px; height: auto;"/>
+            <h3>Group Discussion</h3>
+            <p>We will provide relevant STEM topics and create group of dicussion to facilitate communication and networking between people passionate about similar subjects.</p>
+            </div>
+        </div>
+        <h3 id="videoo">Fun video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1fMeCEPjt3w?si=8doUaoLF8xizOtFs&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+        <!-- rsvp
 
-        <!-- rsvp [PLACEHOLDER] [ADDED IN UNIT 6] -->
+        Purpose:
+        - Section for users to sign up for the event
+        - Contains a form for users to input their information, 
+        and a list of other users who have signed up
+
+        When To Modify:
+        - [ ] Project 6 (REQUIRED FEATURE) 
+        - [ ] Project 6 (STRETCH FEATURE) 
+        - [ ] Any time after
+        --> 
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>We're thrilled you're considering joining us for LatinaSTEMpact, a vibrant celebration of Latina women in science, technology, engineering, and mathematics! Please fill out the form below to secure your spot and help us make this event a resounding success. Your participation helps us build a stronger, more inclusive future in STEM for all. We can't wait to welcome you!</p>
+                </div>
+                <div class="rsvp-participants">
+                    <p>🎟️ Ana from Colombia has RSVP'd.</p>
+                    <p>🎟️ Natalia from Mexico has RSVP'd.</p>
+                    <p>🎟️ Teresa from Puerto Rico has RSVP'd.</p>
+                </div>
+                <div class="participants">
+                <!-- RSVPs go here -->
+                </div>
+            </div>
+
+            <!--- Sign RSVP Form --->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <!-- form inputs go here -->
+                    <label for="name">Name </label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </form>
+                <!-- Submit button -->
+                <button type="submit" id="rsvp-button">Submit RSVP</button>
+            </div>      
+        </div>
+
         <!-- success modal [PLACEHOLDER] [ADDED IN UNIT 9] --> 
 
         <!-- links
@@ -145,18 +198,28 @@
         - [ ] Project 4 (STRETCH FEATURE) 
         - [ ] Any time between / after
         --> 
-        <h2>Links</h2>
+        <h2 id="linkss">Links</h2>
 
         <!-- This <a> block is one link.  Copy and paste all 6 lines to create another link. -->
-        <a class="block" href="https://www.codepath.org">
-            <article>
-                <h3>Link title</h3>
-                <p>Link description</p>
-            </article>
-        </a>
-            
+        <div class="links-container">
+            <a class="block" href="https://www.codepath.org">
+                <article>
+                    <h3>Codepath</h3>
+                    <p>do you want to learn more about Codepath?</p>
+                </article>
+            </a>
+        </div>
+   
         <!-- footer [PLACEHOLDER] [ADDED IN UNIT 3] -->
+         <div class="footer">
+            <a class="block" href="https://www.codepath.org">
+                <article>
+                    <h3>Codepath</h3>
+                    <p>do you want to learn more about Codepath?</p>
+                </article>
+            </a>
+         </div>
         <!-- script [PLACEHOLDER] [ADDED IN UNIT 5] -->
-
+        <script src="index.js"></script>
     </body>
 </html>
